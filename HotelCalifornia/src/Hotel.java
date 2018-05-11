@@ -53,6 +53,10 @@ public class Hotel {
 
 
     }
+    /*
+    if (key < 0 || key >= rooms){
+
+        }
     
 
 
