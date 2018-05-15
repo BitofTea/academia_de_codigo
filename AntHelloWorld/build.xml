@@ -1,0 +1,11 @@
+<project name="HelloAnt" default="ola">
+    <target name="Hello">
+        <echo message="....world"/>
+    </target>
+
+    <target name="ola" depends="Hello">
+        <touch file="patxocas.txt"></touch>
+        <echo message="...minhas patxoquinhas"></echo>
+    </target>
+
+</project>

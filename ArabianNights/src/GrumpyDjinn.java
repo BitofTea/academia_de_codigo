@@ -4,6 +4,9 @@ public class GrumpyDjinn extends Djinn{
 
     public GrumpyDjinn(int maxWishes) {
         super(maxWishes);
+        wishGranted = false;
+
+        System.out.println("New Grumpy Djinn!");
     }
 
     @Override
@@ -11,6 +14,7 @@ public class GrumpyDjinn extends Djinn{
 
         if (wishGranted) {
             System.out.println("I don't grant more wishes!");
+            return;
 
         } else {
             super.grantWish();

@@ -1,4 +1,17 @@
 public class MagicLamp {
 
-    int maxDjinn = 5;
-}
+    private int maxDjinn;
+
+
+
+
+
+
+
+
+
+
+
+
+
+

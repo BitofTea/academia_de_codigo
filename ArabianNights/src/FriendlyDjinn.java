@@ -1,9 +1,11 @@
 public class FriendlyDjinn extends Djinn {
 
+
     private int wishesGranted;
 
     public friendlyDjinn(int maxWishes) {
         super(maxWishes);
+
     }
 
     @Override
