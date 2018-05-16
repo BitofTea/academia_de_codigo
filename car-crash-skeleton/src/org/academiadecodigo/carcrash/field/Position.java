@@ -1,9 +1,6 @@
 package org.academiadecodigo.carcrash.field;
 
-import jdk.nashorn.api.tree.SwitchTree;
 import org.academiadecodigo.carcrash.Direction;
-
-import java.lang.invoke.SwitchPoint;
 
 public class Position {
 
@@ -17,9 +14,8 @@ public class Position {
     }
 
     public Position() {
-
-        this.column = (int) (Math.random() * Field.getHeight());
-        this.row = (int) (Math.random() * Field.getWidth());
+        this.column = (int) (Math.random() * Field.getWidth());
+        this.row = (int) (Math.random() * Field.getHeight());
     }
 
     public int getCol() {

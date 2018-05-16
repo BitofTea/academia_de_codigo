@@ -8,10 +8,14 @@ public class Game {
 
     public static final int MANUFACTURED_CARS = 20;
 
-    /** Container of Cars */
+    /**
+     * Container of Cars
+     */
     private Car[] cars;
 
-    /** Animation delay */
+    /**
+     * Animation delay
+     */
     private int delay;
 
     public Game(int cols, int rows, int delay) {
@@ -50,6 +54,8 @@ public class Game {
             // Move all cars
             moveAllCars();
 
+            checkCollisions();
+
             // Update screen
             Field.draw(cars);
 
@@ -59,6 +65,46 @@ public class Game {
 
     private void moveAllCars() {
 
+        for (int i = 0; i < cars.length; i++) {
+            Car car = cars[i];
+
+            if (!car.isCrashed()) {
+                car.move();
+            }
+        }
+
+        /*for (int i = 0; i < cars.length; i++) {
+            for (int j = 0; j < cars.length; j++) {
+
+                if (i != j) {
+                    moveAllCars();
+
+
+                    {else {
+
+
+
+                    }
+
+                    // nao comparar
+                }
+
+            }
+        }*/
     }
 
+    private void checkCollisions() {
+        for (int i = 0; i < cars.length; i++) {
+            for (int j = 0; j < cars.length; j++) {
+                if (i == j) {
+                    continue;
+                }
+
+                if (cars[i].samePlace(cars[j])) {
+                    cars[i].crashed();
+                    cars[j].crashed();
+                }
+            }
+        }
+    }
 }
