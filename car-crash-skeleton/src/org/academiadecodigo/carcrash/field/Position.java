@@ -49,28 +49,28 @@ public class Position {
         }
     }
 
-    public void moveUP() {
+    private void moveUP() {
 
         if (row > 0) {
             row--;
         }
     }
 
-    public void moveDOWN() {
+    private void moveDOWN() {
 
         if (row < Field.getHeight() - 1) {
             row++;
         }
     }
 
-    public void moveLEFT() {
+    private void moveLEFT() {
 
         if (column > 0) {
             column--;
         }
     }
 
-    public void moveRIGHT() {
+    private void moveRIGHT() {
 
         if (column < Field.getWidth() - 1) {
             column++;
