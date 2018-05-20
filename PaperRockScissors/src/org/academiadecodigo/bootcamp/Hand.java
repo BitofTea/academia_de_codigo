@@ -1,11 +1,10 @@
 package org.academiadecodigo.bootcamp;
 
-public Enum Hand{
+public enum Hand {
+    PAPER,
+    ROCK,
+    SCISSOR
 
-        PAPER,
-        ROCK,
-        SCISSOR
-
-        }
+}
 
 
