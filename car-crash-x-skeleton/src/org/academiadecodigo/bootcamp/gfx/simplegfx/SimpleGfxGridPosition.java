@@ -16,27 +16,30 @@ public class SimpleGfxGridPosition extends AbstractGridPosition {
 
     /**
      * Simple graphics position constructor
+     *
      * @param grid Simple graphics grid
      */
-    public SimpleGfxGridPosition(SimpleGfxGrid grid){
+    public SimpleGfxGridPosition(SimpleGfxGrid grid) {
         super((int) (Math.random() * grid.getCols()), (int) (Math.random() * grid.getRows()), grid);
+        //this((int) (Math.random())* grid.getCols(), (int) (Math.random()* grid.getRows(), grid);
+    }
+        //this.simpleGfxGrid = grid;
+        //this.rectangle = new Rectangle()
 
-        throw new UnsupportedOperationException();
+        new UnsupportedOperationException();
     }
 
     /**
      * Simple graphics position constructor
-     * @param col position column
-     * @param row position row
+     *
+     * @param col  position column
+     * @param row  position row
      * @param grid Simple graphics grid
      */
-    public SimpleGfxGridPosition(int col, int row, SimpleGfxGrid grid){
+    public SimpleGfxGridPosition(int col, int row, SimpleGfxGrid grid) {
         super(col, row, grid);
-         rectangle = new Rectangle(grid.columnToX(col), grid.rowToY(row), grid.getCellSize(), grid.getCellSize());
-         rectangle.fill();
-
-
-
+        rectangle = new Rectangle(grid.columnToX(col), grid.rowToY(row), grid.getCellSize(), grid.getCellSize());
+        rectangle.fill();
 
 
     }
@@ -46,7 +49,7 @@ public class SimpleGfxGridPosition extends AbstractGridPosition {
      */
     @Override
     public void show() {
-        rectangle.fill();
+        this.rectangle.fill();
     }
 
     /**
