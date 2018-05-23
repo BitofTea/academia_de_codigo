@@ -23,7 +23,7 @@ public class SimpleGfxGrid implements Grid {
     }
 
     /**
-     * @see Grid#init()
+     * @see Grid#init () initializes the field simple graphics rectangle and draws it
      */
 
     //Aqui vamos imprimir o resultado/output do nosso novo objecto criado em Simple-Graphics, em pixels - rectângulo.
@@ -91,8 +91,9 @@ public class SimpleGfxGrid implements Grid {
      * Obtains the pixel width and height of a grid position
      * @return
      */
-    public int getCellSize() {
-        return  CELL_SIZE;
+    public int getCellSize(){
+     return  CELL_SIZE;
+
     }
 
     /**

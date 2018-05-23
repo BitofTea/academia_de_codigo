@@ -40,10 +40,9 @@ abstract public class Car {
 
     }
 
-    public void crashed(){
+    public void crashed() {
         crashed = true;
     }
-
 
 
     public boolean samePlace(Car car) {
