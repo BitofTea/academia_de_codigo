@@ -9,7 +9,7 @@ import org.academiadecodigo.bootcamp.grid.GridDirection;
  *
  * @see GridPosition
  */
-public abstract class AbstractGridPosition implements GridPosition {
+public abstract class pAbstractGridPosition implements GridPosition {
 
     private int col;
     private int row;
