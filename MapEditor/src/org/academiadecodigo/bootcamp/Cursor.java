@@ -23,6 +23,9 @@ public class Cursor {
         col = 0;
         row = 0;
 
+        /*int X = 0;
+        int y = 0;*/
+
 
         }
 
