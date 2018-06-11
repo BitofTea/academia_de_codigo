@@ -1,0 +1,373 @@
+/** bbmedia: 3/13/2018 - Scott Seong
+ *  Nav Link Icon Color
+ */
+span.tool {
+    background-color: #009900
+}
+span.wiki {
+    background-color: #0099cc
+}
+span.blog {
+    background-color: #f85050
+}
+span.tutorial {
+    background-color: #660066
+}
+/* End of Link Icon */
+
+div.g-plusone { display: inline; }
+
+div#ad {
+	position: absolute;
+	top: 340px;
+	left: 15px;
+	width: 728px;
+	width: 90px;
+}
+
+.review input {
+	width: 10%
+}
+.review textarea {
+	height: 30px;
+}
+
+p.error, span.error {
+	color: red;
+}
+
+#stickyunit {
+	position: fixed;
+}
+nav.site_navigation ul li a, div.widget a {
+	text-decoration: none;
+	color: black;
+}
+
+/***************************************************************************
+Extending Trendy Blog theme by adding additional table colors
+***************************************************************************/
+/* Blue */
+.table_blue,
+.table_blue th,
+.table_blue td {
+    border: none
+}
+.table_blue thead tr th {
+    color: #fff
+}
+.table_blue tr:nth-child(odd) {
+    background-color: #fff
+}
+.table_blue tr:nth-child(even) {
+    background-color: #fcfdfd
+}
+.table_blue thead tr th:nth-child(odd) {
+    background-color: #2E9AFE
+}
+.table_blue thead tr th:nth-child(even) {
+    background-color: #0080FF
+}
+/* Dark Green */
+.table_dark_green,
+.table_dark_green th,
+.table_dark_green td {
+    border: none
+}
+.table_dark_green thead tr th {
+    color: #fff
+}
+.table_dark_green tr:nth-child(odd) {
+    background-color: #fff
+}
+.table_dark_green tr:nth-child(even) {
+    background-color: #fcfdfd
+}
+.table_dark_green thead tr th:nth-child(odd) {
+    background-color: #088A85
+}
+.table_dark_green thead tr th:nth-child(even) {
+    background-color:  #0B615E
+}
+/* red */
+.table_red,
+.table_red th,
+.table_red td {
+    border: none
+}
+.table_red thead tr th {
+    color: #fff
+}
+.table_red tr:nth-child(odd) {
+    background-color: #fff
+}
+.table_red tr:nth-child(even) {
+    background-color: #fcfdfd
+}
+.table_red thead tr th:nth-child(odd) {
+    background-color: #F85050
+}
+.table_red thead tr th:nth-child(even) {
+    background-color:  red
+}
+
+
+/***************************************************************************
+Example from CSS Menu Maker.
+***************************************************************************/
+.iptable { 
+color: #333;
+font-family: Helvetica, Arial, sans-serif;
+width: 100%; 
+border-collapse: 
+collapse; border-spacing: 0; 
+}
+
+.iptable td, th { 
+border: 1px solid transparent; /* No more visible border */
+height: 30px; 
+transition: all 0.3s;  /* Simple transition for hover effect */
+}
+
+.iptable th {
+	color: white;
+	background: #2E86C1;  /* Darken header a bit */
+	font-weight: bold;
+	text-align: center;
+}
+
+.iptable td {
+	background:  #FAFAFA;
+}
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */ 
+.iptable tr:nth-child(odd) th { background: #2874A6; }  
+
+/* Cells in even rows (2,4,6...) are one color */ 
+.iptable tr:nth-child(even) td { background: #F1F1F1; /* #FEFEFE; */ }   
+
+/* Cells in odd rows (1,3,5...) are another (excludes header cells)  */ 
+.iptable tr:nth-child(odd) td { background: #D9D9D9; }  
+
+.iptable tr td:hover { background: #666; color: #FFF; } /* Hover cell effect! */
+
+/***************************************************************************
+RESPONSTABLE 2.0 by jordyvanraaij
+  Designed mobile first!
+
+If you like this solution, you might also want to check out the 1.0 version:
+  https://gist.github.com/jordyvanraaij/9069194
+***************************************************************************/
+.responstable {
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  background: #FFF;
+  color: #024457;
+  border-radius: 5px;
+  border: 1px solid #167F92;
+}
+.responstable tr {
+  border: 1px solid #D9E4E6;
+}
+.responstable tr:nth-child(odd) {
+  background-color: #EAF3F3;
+}
+.responstable th {
+  display: none;
+  border: 1px solid #FFF;
+  background-color: #167F92;
+  color: #FFF;
+  padding: 1em;
+}
+.responstable th:first-child {
+  display: table-cell;
+  text-align: center;
+}
+.responstable th:nth-child(2) {
+  display: table-cell;
+}
+.responstable th:nth-child(2) span {
+  display: none;
+}
+.responstable th:nth-child(2):after {
+  content: attr(data-th);
+}
+@media (min-width: 480px) {
+  .responstable th:nth-child(2) span {
+    display: block;
+  }
+  .responstable th:nth-child(2):after {
+    display: none;
+  }
+}
+.responstable td {
+  display: block;
+  word-wrap: break-word;
+  max-width: 7em;
+}
+.responstable td:first-child {
+  display: table-cell;
+  text-align: center;
+  border-right: 1px solid #D9E4E6;
+}
+@media (min-width: 480px) {
+  .responstable td {
+    border: 1px solid #D9E4E6;
+  }
+}
+.responstable th, .responstable td {
+  text-align: left;
+  margin: .5em 1em;
+}
+@media (min-width: 480px) {
+  .responstable th, .responstable td {
+    display: table-cell;
+    padding: 1em;
+  }
+}
+/***** END OF RESPONSTABLE 2.0 by jordyvanraaij *****/
+
+/***** CSS MENU from cssmenu.com *****/
+/* @import url(//fonts.googleapis.com/css?family=Open+Sans:700); */
+nav a.mobi-menu { display: none; }
+#cssmenu {
+  background: #222; /*#2874A6 was #f96e5b */
+  width: auto;
+}
+nav.cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  zoom: 1;
+}
+nav.cssmenu ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+nav.cssmenu ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+nav.cssmenu.align-right ul li {
+  float: right;
+}
+nav.cssmenu.align-center ul {
+  text-align: center;
+}
+nav.cssmenu ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+nav.cssmenu ul li a:hover {
+  color: #f85050; /* was #333333 */
+}
+nav.cssmenu ul li a:hover:before {
+  width: 100%;
+}
+nav.cssmenu ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+nav.cssmenu ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #f85050; /* was #333333 */
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+nav.cssmenu ul li.last > a:after,
+nav.cssmenu ul li:last-child > a:after {
+  display: none;
+}
+nav.cssmenu ul li.active a {
+  color: #f85050; /* was #333333 */
+}
+nav.cssmenu ul li.active a:before {
+  width: 100%;
+}
+nav.cssmenu.align-right li.last > a:after,
+nav.cssmenu.align-right li:last-child > a:after {
+  display: block;
+}
+nav.cssmenu.align-right li:first-child a:after {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  nav a.mobi-menu {
+  	font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+    height: 36px;
+    padding-top: 8px;
+    display: inline-block;
+    margin: 0 auto;
+    color: white;
+    text-decoration: none;
+  }
+
+  nav.cssmenu:hover ul {
+    display: block;
+  }
+
+  nav.cssmenu ul {
+    float: none;
+    display: none;
+  }
+  nav.cssmenu ul li {
+    float: none;
+    display: block;
+  }
+  nav.cssmenu ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid red; /*#fb998c */
+  }
+  nav.cssmenu ul li.last > a,
+  nav.cssmenu ul li:last-child > a {
+    border: 0;
+  }
+  nav.cssmenu ul li a:after {
+    display: none;
+  }
+  nav.cssmenu ul li a:before {
+    display: none;
+  }
+}

@@ -1,0 +1,741 @@
+/*
+Theme Name: IslaLink
+Theme URI: http: //islalink.es
+Description: A brand new theme for IslaLink
+Author: Jaymie Scotto & Associates
+Author URI: http: //jaymiescotto.com/
+Template: salient
+Version: 1.0
+*/
+
+/** Begin custom CSS **/
+
+.btn-block {
+    display: block;
+}
+
+.first-container, .space-container-top {
+    margin-top: 50px;
+}
+
+.li-highlight-one li {
+    margin-bottom: 10px;
+}
+.li-highlight-one li strong {
+    color: #fcc917;
+    font-style: italic;
+
+}
+
+.text-large p {
+    font-size: 20px; line-height: 28px;
+}
+
+.text-center p {
+    text-align: center;
+}
+.text-center-all {
+    text-align: center;
+}
+
+.main-content ul li {
+    margin-bottom: 15px;
+}
+
+.underlined-header h1, .underlined-header h2, .underlined-header h3, .underlined-header h4 {
+    min-width: 320px;
+    margin: auto;
+    color: #0018a8 !important;
+    font-size: 32px;
+    text-align: center;
+    padding: 5px 20px;
+    display: inline-block;
+    margin: 0 auto 20px !important;
+    border-bottom: 3px solid #fcc917;
+}
+
+.yellow-header h1, .yellow-header h2, .yellow-header h3, .yellow-header h4, .yellow-header h5, .yellow-header h6 {
+    color: #fdc300 !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 20px !important;
+}
+
+.blue-header h1, .blue-header h2, .blue-header h3, .blue-header h4, .blue-header h5, .blue-header h6 {
+    color: #0018a8 !important;
+    padding-bottom: 10px !important;
+    margin-bottom: 20px !important;
+}
+
+.underline-blue h1, .underline-blue h2, .underline-blue h3, .underline-blue h4, .underline-blue h5, .underline-blue h6 {
+    border-bottom: 3px solid #0018a8;
+    padding: 5px 20px;
+    display: inline-block;
+}
+
+.underline-yellow h1, .underline-yellow h2, .underline-yellow h3, .underline-yellow h4, .underline-yellow h5, .underline-yellow h6 {
+    border-bottom: 3px solid #fdc300;
+    padding: 5px 20px;
+    display: inline-block;
+
+}
+
+
+.h-white h1, .h-white h2, .h-white h3, .h-white h4,.h-white h5, .h-white h6 {
+    color: #fff;
+}
+
+.text-150height .wpb_text_column { min-height: 150px; }
+
+#header-secondary-outer { padding-top: 20px; padding-bottom: 10px; }
+#header-secondary-outer i {
+    background-color: transparent;
+    height: auto;
+    width: 32px;
+    line-height: inherit;
+    color:inherit;
+
+}
+
+
+#header-secondary-outer a { font-size: 14px !important; }
+    #header-secondary-outer li:first-child a, li#menu-item-1103 a { border-left: 0px !important; }
+
+#translator-container { margin-top: 2px; }
+
+
+.bala-link-button {
+    border-radius: 20px;
+    border: 1px solid #0018a8;
+    padding: 10px 40px;
+    display: block;
+    max-width: 250px;
+    margin: auto;
+    margin-top: 50px;
+    color: #0018a8 !important;
+}
+
+.blog-recent a  {
+    color: #333333 !important;
+}
+
+/* Typography */
+
+    /* Headers */
+    div.project-title h1 { text-transform: none !important; }
+    body.single-portfolio h1 { max-width: 50%; margin: 0 auto auto; font-size: 60px; }
+
+/* Buttons */
+.isla-button-blue-outline a {
+    color: #0018a8;
+    padding: 5px;
+    border: 1px solid #0018a8;
+    background: transparent;
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+}
+    .isla-button-blue-outline a:hover {
+        color: #333;
+        border-color: #333;
+    }
+
+.isla-button-white-outline a {
+    color: #fff;
+    padding: 5px;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+}
+    .isla-button-white-outline a:hover {
+        color: #333;
+        border-color: #333;
+    }
+
+/** Imported from CSS dialogs in backend **/
+
+
+/*-------------------------------------------------------------------------*/
+/*	0. Customization
+/*-------------------------------------------------------------------------*/
+
+.home .page-header-bg-image h1{
+	color: #0018a8 !important;
+	text-transform: uppercase;
+}
+
+button {
+	border-radius: 20px;
+	background: white;
+	text-transform: uppercase;
+	padding: 15px 10px;
+min-width: 150px;
+outline: none;
+border: 0;
+}
+
+.home-page-link {
+display: block;
+float: left;
+width: 25%;
+text-align: center;
+height: 205px;
+margin-top: 110px;
+margin-bottom: 110px;
+}
+
+.subheader button {
+	margin-right: 20px;
+	font-size: 14px;
+	min-width: 285px;
+padding-left: 15px;
+padding-right: 15px;
+}
+
+.home-page-link-title {
+	font-size: 17px;
+    color: #0018a8;
+}
+
+.home-page-bala h1 {
+	font-size: 25px;
+	color: #0018a8;
+}
+
+.home-page-bala button {
+	background: none;
+	border: 1px solid #0018a8;
+    color: #0018a8;
+    margin-right: 20px;
+}
+
+.home-page-bala h2 {
+	color: #fcc917;
+	font-size: 18px;
+}
+
+.about .page-header-bg-image h1 {
+	font-size: 45px;
+color: #0018a8 !important;
+}
+
+.eqt p {
+	width: 75%;
+    float: left;
+    background: #0018a8;
+    display: block;
+    color: white;
+    padding: 60px;
+    padding-top: 150px;
+    min-height: 410px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.eqt-logo {
+	width: 25%;
+float: left;
+background: url(http://isla.jsawebsites.com/wp-content/uploads/2016/10/EQT_Logo_Gray_RGB.png);
+	min-height:412px;
+background-size: 100%;
+background-position: center;
+background-repeat: no-repeat;
+}
+
+.housing-center, .housing-center li, .housing-center h2 {
+	color: white;
+}
+
+.housing-center h1 {
+	color: #fcc917;
+}
+
+.link-map-img {
+	float: left;
+width: 50%;
+padding-bottom : 38%;
+background-size: cover;
+background-repeat: no-repeat;
+display: block;
+}
+
+.link-info{
+width: 50%;
+float:left;
+height: 0px;
+padding: 30px;
+box-sizing:border-box;
+display: block;
+}
+
+.link-info-header {
+	border-bottom: 1px solid #000000;
+	width: 100%;
+}
+
+
+
+.isla-contact-links {
+text-align: right;
+padding: 5px 10px;
+
+
+}
+
+.isla-contact-links a {
+	color: #0822ae;
+margin: 0 5px;
+}
+
+.isla-contact-links .mail-icon {
+ width: 20px;
+height: 13px;
+display: inline-block;
+background: url(http://isla.jsawebsites.com/wp-content/uploads/2016/10/header-mail.png);
+background-size: 100%;
+background-position: center;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+.isla-contact-links .phone-icon {
+ width: 18px;
+height: 18px;
+display: inline-block;
+background: url(http://isla.jsawebsites.com/wp-content/uploads/2016/10/header-phone.png);
+background-size: 18px 18px;
+background-position: center;
+margin-right: 10px;
+margin-left: 10px;
+}
+
+#header-outer {
+background: rgba(255, 255, 255, 0.8) !important;
+}
+
+.post-content a {
+	color: #0018a8;
+}
+
+
+#header-outer .sf-menu > .menu-item > a {
+	padding-top: 25px !important;
+padding-bottom: 25px !important;
+font-size: 16px;
+}
+
+#header-outer .container .row {
+/*border-top: 1px solid #ccc;*/
+/*margin-top: 10px;
+margin-left: 30px;
+margin-right: 30px;*/
+}
+
+
+#footer-outer #footer-widgets .col ul li.menu-item {
+border-color: white !important;
+}
+
+#footer-outer #footer-widgets .col ul  li.menu-item a {
+	font-size: 18px;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+
+#footer-outer #footer-widgets .col ul .sub-menu li.menu-item a {
+font-size: 12px;
+padding-bottom: 0px;
+padding-top: 0px;
+}
+
+#footer-outer .widget.widget_categories ul ul, #footer-outer .widget.widget_pages ul ul, #footer-outer .widget.widget_nav_menu ul ul, #slide-out-widget-area .widget.widget_nav_menu ul ul {
+	padding: 0px;
+border: none;
+}
+
+#footer-outer .widget.widget_nav_menu li a{
+padding: 0px;
+}
+
+#logo, .starting-logo {
+margin-top: 15px;
+}
+
+
+#header-space {
+	background: white !important;
+}
+
+#footer-outer #footer-widgets .col p {
+	padding-bottom: 0px;
+        margin-bottom: 0px;
+font-size: 14px;
+}
+
+#text-3 .main-header {
+font-family: varela;
+font-size: 18px;
+}
+
+#text-3 .textwidget h4, #text-3 .textwidget h5 {
+	margin-bottom: 0px;
+font-size: 14px;
+}
+
+#text-3 .textwidget .main-header {
+	margin-bottom: 10px;
+}
+
+#isalink-contact {
+ font-weight: bold;
+ font-size: 16px;
+}
+
+#footer-outer #text-3 a:not(.nectar-button) {
+ color: #0822ae !important;
+}
+
+#footer-outer {
+ -webkit-box-shadow: 0px 0 5px 2px #e1e1e1;
+          box-shadow: 0px 0 5px 2px #e1e1e1;
+}
+
+.wpcf7-form-control-wrap input {
+border: none;
+box-shadow: none;
+outline: none;
+background: white;
+border-bottom: 1px solid #e1e1e1;
+}
+
+.wpcf7-form p {
+	float: left;
+width: 29%;
+margin-right: 2%;
+padding-bottom: 10px;
+}
+
+.wpcf7-form p:nth-child(4) {
+	margin-right: 0px;
+}
+
+
+
+.wpcf7-form p:nth-child(6) {
+	float:none;
+width: 100%;
+}
+
+#header-outer .sub-menu {
+ width: 290px;
+}
+
+#header-outer .sub-menu .sub-menu {
+	left: 290px !important;
+}
+
+#header-outer .sub-menu .menu-item a {
+line-height:20px !important;
+width: 290px;
+}
+
+.meta-author {
+ display: none !important;
+}
+
+.meta-comment-count {
+ display: none !important;
+}
+
+#page-header-bg[data-post-hs="default_minimal"] .inner-wrap > a {
+display: none !important;
+}
+
+
+
+
+/** HOME **/
+.home h1 {
+    text-shadow: 0px 0px 100px #ffffff, 0px 2px 10px #ffffff;
+}
+
+.subheader p {
+    color: #333333 !important;
+    font-size: 18px !important;
+        text-shadow: 0px 0px 100px #ffffff, 0px 2px 10px #ffffff;
+}
+
+.subheader a {
+    border-radius: 20px;
+    padding: 10px 40px;
+    display: inline-block;
+    margin: auto;
+    margin-top: 50px;
+    color: #0018a8 !important;
+    background: white;
+    max-width: 400px;
+    margin: auto;
+    font-size: 18px;
+    margin-left: 20px;
+}
+
+
+
+.home-bala-link h3 {
+    color: #0018a8;
+    font-size: 30px;
+}
+
+
+
+
+
+
+.bala-link-header {
+    font-size: 40px;
+    color: #0018a8;
+}
+
+.bala-link-subheader {
+    color: #fcc917;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.home .blog-recent .col .post-header h3 a {
+    color: #333333 !important;
+}
+
+.cable-link-big {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-size: 100%;
+    color: white;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url('/wp-content/uploads/2016/10/cablelanding.jpg');
+}
+
+.cable-link-big-text {
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    top: 50%;
+    width: 100%;
+    margin: auto;
+    color: white !important;
+}
+
+.cable-link-big-text h5  {
+    font-size: 32px;
+}
+
+.cable-link-big-text p, .cable-link-big-text h5 {
+    color: white !important;
+
+}
+
+.colocation-link-big {
+        position: relative;
+ height: 500px;
+ width: 100%;
+ display: block;
+ background-size: 100%;
+   background-repeat: no-repeat;
+ background-image: url('/wp-content/uploads/2016/11/isla-colocation2.jpg');
+ background-position: center bottom;
+}
+
+.colocation-link-big-text {
+    position: absolute;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    top: 50%;
+    width: 100%;
+    margin: auto;
+    color: white !important;
+}
+
+
+.colocation-link-big h5 {
+    font-size: 32px;
+    color: #0018a8;
+}
+
+/* ABOUT US */
+
+#page-header-bg h1 {
+    /*font-size: 80px !important;*/
+    color: #0018a8 !important;
+    margin-bottom: 20px;
+    /*text-shadow: 0px 0px 100px #ffffff, 0px 2px 10px #ffffff;*/
+}
+
+
+
+.subheader h2 {
+    font-size: 30px;
+    text-shadow: 0px 0px 100px #ffffff, 0px 2px 10px #ffffff;
+}
+
+.subheader p {
+    font-size: 18px;
+    text-shadow: 0px 0px 100px #ffffff, 0px 2px 10px #ffffff;
+}
+
+
+
+.about-principles .about-header {
+    color: #fcc917 !important;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+
+.principle-highlight {
+    color: #fcc917;
+    font-style: italic;
+}
+
+.people-header {
+    display: block;
+    margin: auto;
+    width: 320px;
+    font-size: 20px;
+    color: #0018a8;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #8f8f8f;
+    margin-bottom: 30px;
+    font-family: 'hindsemibold';
+}
+
+.yellow-subheader {
+    color: #fcc917;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.yellow-text {
+    color: #fcc917;
+}
+
+.history-header, .milestones-header {
+    font-size: 32px;
+    color: #fcc917 !important;
+}
+
+.history-header {
+    margin-bottom: 10px;
+}
+
+.milestones-header {
+    padding-bottom: 15px;
+    border-bottom: 3px solid white;
+    margin-bottom: 20px;
+}
+
+.bod-row .work-info .vert-center p{
+   display: none;
+}
+
+
+/** SINGLE PORTFOLIO ITEM **/
+
+
+
+
+.people-header {
+    display: block;
+    margin: auto;
+    width: 320px;
+    font-size: 20px;
+    color: #0018a8;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #8f8f8f;
+    margin-bottom: 30px;
+    font-family: 'hindsemibold';
+}
+
+#design-list {
+    margin-top: 53px;
+}
+
+.timeline-two {
+    margin-top: 51px;
+}
+
+/** Mediterranean Hub **/
+#page-header-bg h1 {
+    text-transform: uppercase;
+    font-size: 74px;
+    color: #fdc300 !important;
+    font-family: 'hindsemibold';
+}
+
+#page-header-bg .subheader {
+    font-size: 30px !important;
+    font-style: italic;
+    color: white !important;
+}
+
+
+
+.divider-line {
+    max-width: 400px;
+    height: 3px;
+    background: #0018a8;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.yellow-small-header {
+    font-size: 16px;
+    font-style: italic;
+}
+
+/** Our Solutions **/
+
+
+
+#header-outer header #top nav  ul  li  a {
+    color: white !important;
+}
+
+
+
+
+
+.link-submarine-header {
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 3px solid white;
+    max-width: 500px;
+    margin: auto;
+}
+
+
+
+
+.link-grid-item-title {
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-family: 'hindsemibold';
+}
+
+.link-grid-item-subtitle {
+    font-size: 20px;
+    height: 120px;
+}
+
+.link-grid-btn {
+    border-radius: 20px;
+    border: 2px solid white;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    color: white;
+    max-width: 200px;
+}

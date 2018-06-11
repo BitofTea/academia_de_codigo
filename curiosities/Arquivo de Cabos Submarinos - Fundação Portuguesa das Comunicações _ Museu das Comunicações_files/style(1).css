@@ -1,0 +1,28 @@
+/*
+Theme Name: vestige Child Theme 
+Theme URI: http://preview.imithemes.com/vestige-wp
+Description: vestige Child Theme
+Author: imithemes
+Author URI: http://www.imithemes.com
+Template: vestige
+Version: 1.0
+*/
+/* =Theme customization starts here
+------------------------------------------------------- */
+@import url(../vestige/style.css);
+
+.footerTitle{
+    color: #745f2e;
+}
+
+.sow-cta-base {
+    zoom: 1;
+    border: 0px solid !important;
+    padding:0px !important;
+}
+
+ul.slot-exhibitions li{padding:10px 25px; !important;}
+
+.exhibitions-timeline {
+    margin-bottom: 15px !important;
+}
