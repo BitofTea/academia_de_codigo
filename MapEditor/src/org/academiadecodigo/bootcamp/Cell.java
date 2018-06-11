@@ -26,7 +26,7 @@ public class Cell {
     public boolean isFilled() {
         return representation.isFilled();
     }
-
+}
     /* public int getX() {
         return 10;
     }
@@ -47,4 +47,3 @@ public class Cell {
 
         }
     }*/
-}

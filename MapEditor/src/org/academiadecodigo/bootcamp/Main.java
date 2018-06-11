@@ -8,7 +8,7 @@ public class Main {
         grid.init();
 
         Cursor cursor = new Cursor(grid);
-        KeyboardListener listener = new KeyboardListener(cursor);
+        KeyboardListener Listener = new KeyboardListener(cursor);
 
 
         //new Cell(10, 20);
