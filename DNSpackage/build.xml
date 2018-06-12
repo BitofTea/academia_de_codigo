@@ -6,7 +6,7 @@
     <target name="init" description="Initializes properties">
         <property name="project.name" value="UDPSender" />
         <property name="src.dir" value="src" />
-        <property name="main.class" value="org.academiadecodigo.udpsender.UDPSender" />
+        <property name="main.class" value="org.academiadecodigo.udpsender.UDPEchoer" />
         <property name="build.dir" value="build/" />
         <property name="classes.dir" value="${build.dir}/classes" />
     </target>
