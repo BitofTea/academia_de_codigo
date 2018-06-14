@@ -9,19 +9,19 @@ public class Main {
     }
 
 
-   /* "HTTP/1.0 200 Document Follows\r\n\n"+
+   /*String header = "HTTP/1.0 200 Document Follows\r\n\n"+
             "Content-Type: text/html; charset=UTF-8\r\n\n"+
             "Content-Length: <file_byte_size> \r\n\n"+
             "\r\n"
 
 
-    "HTTP/1.0 200 Document Follows\r\n\n"+
+    String header = "HTTP/1.0 200 Document Follows\r\n\n"+
             "Content-Type: image/<image_file_extension> \r\n\"\n"+
             "Content-Length: <file_byte_size> \r\n\n"+
             "\r\n"
 
 
-    "HTTP/1.0 404 Not Found\n"+
+    String header = "HTTP/1.0 404 Not Found\n"+
             "Content-Type: text/html; charset=UTF-8\r\n\n"+
             "Content-Length: <file_byte_size> \r\n\n"+
             "\r\n"*/
