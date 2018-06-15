@@ -1,22 +1,21 @@
 package academiadecodigo.org.webserver;
 
 import java.io.*;
-import java.net.DatagramPacket;
 import java.net.ServerSocket;
 import java.net.Socket;
-import java.nio.CharBuffer;
 
 public class WebServer {
 
 
-    private StatusType statusType;
-    //private String[] args;
+    private HttpVerb verb;
+    public String[] args;
     int portNumber = 8080; // Integer.parseInt(args[0]);
     ServerSocket serverSocket = null;
     Socket clientSocket = null;
 
 
     public WebServer(int portNumber) {
+
     }
 
     public void start() {
@@ -30,18 +29,21 @@ public class WebServer {
             System.out.println("Waiting for client...");
             clientSocket = serverSocket.accept();
 
-            //recebe a mensagem do cliente e imprime no ecrâ (setup input and output streams)
+            //recebe a mensagem do cliente e imprime no ecrâ (setup input)
             BufferedOutputStream out = new BufferedOutputStream(clientSocket.getOutputStream());
             BufferedReader in = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
 
             // ler o request da input stream do cliente
-            String request = readRequest(in);
+            Request request = new Request(readRequest());
 
-            // 1. descobrir o ficheiro a ler a partir da string request
+            //ficheiro a ler a partir da string request
+            DataOutputStream writer = new DataOutputStream(clientSocket.getOutputStream());
+            Response response = new Response();
 
-            while (true){
 
-                if (request.contains("GET")){
+            while (true) {
+
+                if (request.contains("GET")) {
                     System.out.println("GET is reading");
                 }
             }
@@ -60,7 +62,7 @@ public class WebServer {
 
             // 3. escrever para o output stream o header e o ficheiro (usando fileinputstream)
             out.write(header.getBytes());
-            FileInputStream inputStream = new FileInputStream(file);
+            FileInputStream inputStream;
             int b = inputStream.read();
 
             while (b != -1) {
@@ -77,7 +79,7 @@ public class WebServer {
         }
     }
 
-    private String readRequest(BufferedReader in) {
+    private String readRequest(String in) {
 
         String request = "";
         String line = null;
