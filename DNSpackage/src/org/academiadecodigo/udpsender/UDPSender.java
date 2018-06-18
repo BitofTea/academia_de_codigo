@@ -1,57 +1,47 @@
 package org.academiadecodigo.udpsender;
 
 import java.io.IOException;
-import java.net.DatagramPacket;
-import java.net.DatagramSocket;
-import java.net.InetAddress;
-import java.net.SocketException;
+import java.net.*;
 
 public class UDPSender {
 
     public static void main(String[] args) {
 
-        if (args.length < 1) {
-            throw new IllegalArgumentException("usage: <port>");
 
+        if (args.length < 3) {
+            throw new IllegalArgumentException("usage <host> <port> <message>");
         }
+
+        String host = args[0];
+        int port = Integer.parseInt(args[1]);
+        String message = args[2];
 
         DatagramSocket socket = null;
 
-        int portNumber = Integer.parseInt(args[0]);
 
-        try {
+            try {
+                socket = new DatagramSocket();
+                byte[] buffer = message.getBytes();
 
-            byte[] sendBuffer;
-            byte[] recvBuffer = new byte[1024];
+                while (!socket.isClosed()){
+                    DatagramPacket packet = new DatagramPacket(buffer, buffer.length, InetAddress.getByName(host), port);
+
+                    socket.send(packet);
+
+                    packet = new DatagramPacket(buffer, buffer.length);
+                    socket.receive(packet);
+                    System.out.println(new String(packet.getData()).trim());
+                }
+
+            } catch (IOException e1) {
+                e1.printStackTrace();
+            }finally {
 
 
-            socket = new DatagramSocket(portNumber);
+            if(socket != null);
 
-
-            while (true) {
-                DatagramPacket receivePacket = new DatagramPacket(recvBuffer, recvBuffer.length);
-                socket.receive(receivePacket);
-
-                String upperString = new String(recvBuffer, receivePacket.getOffset(), receivePacket.getLength()).toUpperCase();
-                sendBuffer = upperString.getBytes();
-
-
-                receivePacket.setData(sendBuffer);
-                socket.send(receivePacket);
-
-            }
-
-        } catch (SocketException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (socket != null) {
-                socket.close();
-            }
+            socket.close();
         }
-
-
     }
 
 
