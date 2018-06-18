@@ -2,9 +2,9 @@ public class Room {
 
     private boolean available;
 
-    public Room(boolean available) {
-        this.available = available;
-        //this room number
+    public Room() {
+        available = true;
+
     }
 
     public boolean isAvailable() {
@@ -12,10 +12,10 @@ public class Room {
     }
 
     public void occupy() {
-        this.available = false;
+        available = false;
     }
 
     public void vacated() {
-        this.available = true;
+        available = true;
     }
 }
