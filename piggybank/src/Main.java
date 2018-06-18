@@ -1,13 +1,16 @@
 public class Main {
     
-    public static void main(String[] args) {
+    public static void main(String[] args){
 
-        Wallet gucci = new Wallet();
-        BankAccount millenium = new BankAccount();
+    Wallet wallet1 = new Wallet();
 
-      Person seantaylor = new Person("Sean Taylor", gucci, millenium);
+    BankAccount bankAccount1 = new BankAccount();
 
-        System.out.println(seantaylor.getName() + " " + seantaylor.getBankaccount());
+
+    Person person1 = new Person("Gabi", wallet1, bankAccount1,10);
+        System.out.println(person1);
+
     }
-
 }
+
+//Nota: no main o resultado apresenta-me um valor da Wallet acrescido de 10. De onde é que isto vêm?

@@ -1,15 +1,22 @@
 public class Wallet {
 
-    static double cash = 50;
+    private int cash = 100;
 
-    public static void withdraw(double amount) {
-        cash = cash - amount;
-
+    public int getCash() {
+        return cash;
     }
 
-    public static void deposit(double amount) {
-        cash = cash + amount;
+    public int withdraw(int amount){
+        return cash = cash - amount;
+
     }
-    public static String currentcash() {
-        return "The cash flow on this wallet is:" + cash;
+    public int deposit(int amount) {
+        return cash = cash + amount;
+    }
+
+    @Override
+    public String toString() {
+        return "is" + " " + cash;
+    }
+
 }

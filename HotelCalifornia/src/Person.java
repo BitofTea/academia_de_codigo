@@ -7,7 +7,8 @@ public class Person {
         this.name = name;
     }
 }
-public void checkIn(Hotel hotel){
+
+    public void checkIn(Hotel hotel) {
 
     /*if (this.myroom != null)}
 

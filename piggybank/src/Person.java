@@ -1,38 +1,31 @@
 public class Person {
 
     private String name;
-    private Wallet mywallet;
-    private BankAccount bankaccount;
+    private Wallet myWallet;
+    private BankAccount myBankAccount;
 
 
-    public Person(String name, Wallet mywallet, BankAccount bankaccount) {
+    public Person(String name, Wallet myWallet, BankAccount myBankAccount, int money) {
         this.name = name;
-        this.mywallet = mywallet;
-        this.bankaccount = bankaccount;
+        this.myWallet = myWallet;
+        this.myBankAccount = myBankAccount;
 
+        myWallet.deposit(money);
     }
 
-    public String getName() {
-        return name;
+    public int getMoney(int money) {
+        return myWallet.withdraw(money);
     }
 
-    public Wallet getMywallet() {
-        return mywallet;
+    private void depositMoney(int money){
+        myBankAccount.deposit(myWallet.withdraw(money));
 
     }
-
-    public BankAccount getBankaccount() {
-        return bankaccount;
-    }
-
-    public void setMywallet(Wallet mywallet) {
-        this.mywallet = mywallet;
-    }
-
-    public void setBankaccount(BankAccount bankaccount) {
-        this.bankaccount = bankaccount;
+    @Override
+    public String toString(){
+        return name + ": Bank account" + " " + myBankAccount + " " + "and my Wallet" + " " + myWallet;
     }
 }
-Person.withdraw(25);
+
 
 

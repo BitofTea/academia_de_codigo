@@ -1,23 +1,27 @@
 public class BankAccount {
 
-    static double balance = 100;
+    private int balance = 60;
 
-    public static void withdraw(double amount) {
-        balance = balance - amount;
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public int withdraw(int amount) {
+        return balance = balance - amount;
 
     }
 
-    public static void deposit(double amount) {
+     public void deposit(int amount){
         balance = balance + amount;
-    }
-
-    public static String currentbalance() {
-        return "The balance of this account is:" + balance;
-    }
-
-    public BankAccount() {
 
     }
-
+    @Override
+    public String toString(){
+         return "balance is" + " " + balance;
+    }
 
 }
+
+
+
