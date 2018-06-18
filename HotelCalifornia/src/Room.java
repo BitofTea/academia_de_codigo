@@ -1,21 +1,15 @@
 public class Room {
 
-    private boolean available;
+    private boolean available = true;
 
-    public Room() {
-        available = true;
 
+    public void setAvailable(boolean available) {
+        this.available = available;
     }
+
 
     public boolean isAvailable() {
         return available;
     }
 
-    public void occupy() {
-        available = false;
-    }
-
-    public void vacated() {
-        available = true;
-    }
 }

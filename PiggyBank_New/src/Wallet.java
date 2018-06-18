@@ -11,22 +11,23 @@ public class Wallet {
 
     //método do objecto Carteira para pôr/acrescentar dinheiro
     public void add(int money) {
-        this.money = this.money - money;
+        this.money = this.money + money;
     }
 
     //Método para o funcionamento/uso da carteira:
     public int use(int money) {
 
-        //não ter dinheiro, estar vazia = 0,  Nota: este if e o RemovedMoney ??
+        //não ter dinheiro, estar vazia = 0
         if (money > this.money) {
             int removedMoney = this.money;
+            //money = this.money
             this.money = 0;
             return removedMoney;
         }
         //pode ter dinheiro.
         this.money = this.money - money;
         return money;
-        // isto parece uma repetição, redundante do método add ??
+
     }
 
     @Override

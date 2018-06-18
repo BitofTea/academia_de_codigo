@@ -6,10 +6,10 @@ public class Main {
         Wallet wallet2 = new Wallet();
         Bank bank1 = new Bank();
 
-        Person person1 = new Person("Gabi", bank1, wallet1, 10);
+        Person person1 = new Person("Gabi", bank1, wallet1, 0);
         System.out.println(person1);
 
-        Person person2 = new Person("Rui", bank1, wallet2, 10);
+        Person person2 = new Person("Rui", bank1, wallet2, 0);
         System.out.println(person2);
 
         person1.spend(0);

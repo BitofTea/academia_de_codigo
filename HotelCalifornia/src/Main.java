@@ -17,7 +17,7 @@ public class Main {
 
        // String firstName();
         //String lastName();
-        //String fullName = firstName + "" + lastName;
+
 
 
     }
