@@ -36,4 +36,5 @@ public class Vehicle {
     public String getBrand() {
         return brand;
     }
+
 }

@@ -4,7 +4,7 @@ public class GaragemTester {
 
     public static void main(String[] args) {
 
-        Garagem g = new Garagem(10);
+      /*  Garagem g = new Garagem(10);
         System.out.println("Should be empty after creating");
         System.out.println(g);
         System.out.println("----------");
@@ -36,6 +36,6 @@ public class GaragemTester {
         System.out.println("Should not be able to unpark an empty spot");
         System.out.println("unparked? " + g.unpark(0));
         System.out.println(g);
-        System.out.println("----------");
+        System.out.println("----------");*/
     }
 }

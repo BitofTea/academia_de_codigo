@@ -13,43 +13,56 @@ public class Garagem {
 
     }
 
-    public boolean park() {
-
+    public boolean park(Vehicle vehicle) {
 
         for (int i = 0; i < spots.length; i++) {
 
-            if (spots[i]){
+            if (spots[i] != null) {
                 continue;
+
             }
 
+            vehicle.park(i);
 
-            spots[i] = true;
+            spots[i] = vehicle;
+
             freeSpots--;
             return true;
-
         }
-
         return false;
-
     }
 
+    public boolean unpark(int spot) {
 
-    public boolean unpark(int spotsNumber) {
-
-        if (spotsNumber > spots.length - 1) {
+        if (spot > spots.length - 1) {
             return false;
         }
 
-        if (!spots[spotsNumber]) {
+        if (spots[spot] == null) {
             return false;
 
         }
 
-        spots[spotsNumber] = false;
+        spots[spot] = null;
         freeSpots++;
         return true;
 
     }
+
+
+    public boolean unpark(Vehicle vehicle) {
+
+        if (!vehicle.isparked()) {
+            return false;
+
+        }
+
+        int spot = vehicle.getParkingSpot();
+        return unpark(spot);
+
+    }
+
+
     public int getCappacity() {
         return spots.length;
     }
@@ -64,7 +77,8 @@ public class Garagem {
      * Descomentar quando a classe estiver implementada
      * Assume a existencia de uma propriedade `spots`
      */
- /*  @Override
+
+    @Override
     public String toString() {
         String garageRepresentation = "";
 
@@ -75,6 +89,6 @@ public class Garagem {
         garageRepresentation += "|";
 
 
-        return garageRepresentation; */
+        return garageRepresentation;
     }
 }
