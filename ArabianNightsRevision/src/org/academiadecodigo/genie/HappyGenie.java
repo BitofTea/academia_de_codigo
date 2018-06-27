@@ -21,7 +21,7 @@ public class HappyGenie extends Genie {
     public void grantWish(){
 
         if(grantedWishes <= getMaxWishes()){
-            System.out.println("All your wishes have been granted!");
+            System.out.println("Your wish have been granted!");
         }
 
         super.grantWish();

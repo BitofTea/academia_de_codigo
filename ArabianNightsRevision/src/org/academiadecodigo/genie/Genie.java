@@ -16,6 +16,8 @@ public class Genie {
     }
 
     public int getMaxWishes() {
+        System.out.println("All your wishes have been granted!");
         return maxWishes;
+
     }
 }
