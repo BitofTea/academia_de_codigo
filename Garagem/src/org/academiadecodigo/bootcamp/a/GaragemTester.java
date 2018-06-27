@@ -4,7 +4,11 @@ public class GaragemTester {
 
     public static void main(String[] args) {
 
+<<<<<<< HEAD
        /* Garagem g = new Garagem(4);
+=======
+      /*  Garagem g = new Garagem(2);
+>>>>>>> 1ea5b5441ed6b5a0957a9418bfeb7e02dbde5d7e
 
         System.out.println("Should be empty after creating");
         System.out.println(g);
