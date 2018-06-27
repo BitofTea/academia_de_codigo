@@ -63,7 +63,11 @@ public class Garagem {
      * Descomentar quando a classe estiver implementada
      * Assume a existencia de uma propriedade `spots`
      */
+<<<<<<< HEAD
+   /* @Override
+=======
  /*   @Override
+>>>>>>> 1ea5b5441ed6b5a0957a9418bfeb7e02dbde5d7e
     public String toString() {
         String garageRepresentation = "";
 
@@ -76,5 +80,9 @@ public class Garagem {
 
 
         return garageRepresentation;
+<<<<<<< HEAD
+    }*/
+=======
     } */
+>>>>>>> 1ea5b5441ed6b5a0957a9418bfeb7e02dbde5d7e
 }
