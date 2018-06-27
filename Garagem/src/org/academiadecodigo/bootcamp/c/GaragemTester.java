@@ -6,7 +6,7 @@ public class GaragemTester {
 
     public static void main(String[] args) {
 
-        Vehicle[] vehicles = new Vehicle[brands.length];
+       /* Vehicle[] vehicles = new Vehicle[brands.length];
         Garagem g = new Garagem(vehicles.length);
 
         for (int i = 0; i < vehicles.length; i++) {
@@ -48,7 +48,7 @@ public class GaragemTester {
         System.out.println("Should not be able to unpark an unparked car");
         System.out.println("unparked? " + g.unpark(vehicles[2]));
         System.out.println(g);
-        System.out.println("----------");
+        System.out.println("----------"); */
 
     }
 }

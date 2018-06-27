@@ -2,7 +2,7 @@ package org.academiadecodigo.bootcamp.d;
 
 public class Garagem {
 
-    private Vehicle[] spots;
+    public Vehicle[] spots;
     private int freeSpots;
 
     public Garagem(int spots) {
@@ -73,13 +73,13 @@ public class Garagem {
     public String toString() {
         String garageRepresentation = "";
 
-        /*
+
         for (int i = 0; i < spots.length; i++) {
             garageRepresentation += "|" + (spots[i] != null ? spots[i].getBrand().substring(0, 3) : " " + i + " ");
         }
 
         garageRepresentation += "|";
-        */
+
 
         return garageRepresentation;
     }

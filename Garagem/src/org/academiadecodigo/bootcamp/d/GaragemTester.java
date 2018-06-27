@@ -5,7 +5,7 @@ public class GaragemTester {
     public static String[] brands = {"Lamborghini", "Mercedes", "Ferrari", "Maseratti", "Bentley", "Audi", "Fiat", "Renault"};
 
     public static void main(String[] args) {
-/*
+
         Vehicle[] vehicles = new Vehicle[brands.length];
         Garagem g = new GaragemDosRicos(vehicles.length);
 
@@ -17,11 +17,11 @@ public class GaragemTester {
         System.out.println(g);
         System.out.println("----------");
 
-        for (int i = 0; i < g.getCapacity(); i++) {
+        for (int i = 0; i < g.getCappacity(); i++) {
             System.out.println("Going to park: " + vehicles[i].getBrand());
             System.out.println("parked? " + g.park(vehicles[i]));
             System.out.println(g);
             System.out.println("----------");
-        }*/
+        }
     }
 }
