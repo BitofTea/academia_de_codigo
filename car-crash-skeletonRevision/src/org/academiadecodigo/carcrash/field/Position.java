@@ -2,12 +2,15 @@ package org.academiadecodigo.carcrash.field;
 
 public class Position {
 
-    private int col;
-    private int row;
+
+    //private int with = 5;
+    //private int height = 5;
+    private int col = 7;
+    private int row = 7;
 
     public Position() {
-        this.col = (int) (Math.random() * Field.getWidth() - 1);
-        this.row = (int) (Math.random() * Field.getHeight() - 1);
+        this.col = (int) (Math.random() * Field.getWidth());
+        this.row = (int) (Math.random() * Field.getHeight());
 
     }
 
@@ -30,10 +33,10 @@ public class Position {
 
     public void moveDown(int i) {
 
-        if (row + i > 0) {
+        if (row + i < Field.getHeight()) {
             row += i;
         } else {
-            row = 0;
+            row = Field.getHeight();
         }
     }
 
@@ -48,16 +51,15 @@ public class Position {
 
     public void moveRight(int i) {
 
-        if (col + i > 0) {
+        if (col + i < Field.getWidth()) {
             col -= i;
         } else {
-            col = 0;
+            col = Field.getWidth();
         }
     }
 
-    public void move(Direction direction) {
+    public void move(Direction direction, int i) {
 
-        int i = 0;
 
         switch (direction) {
 
@@ -86,7 +88,7 @@ public class Position {
 
     @Override
     public String toString() {
-        return "column=" + col + "row=" + row;
+        return "column=" + " " + col + "row=" + " " + row;
 
     }
 }
