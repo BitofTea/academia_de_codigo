@@ -4,6 +4,11 @@ import org.academiadecodigo.carcrash.cars.Car;
 import org.academiadecodigo.carcrash.cars.CarFactory;
 import org.academiadecodigo.carcrash.field.Field;
 
+//Creates cars
+//Makes all the cars move
+//Check for collisions between cars
+
+
 public class Game {
 
     public static final int MANUFACTURED_CARS = 20;

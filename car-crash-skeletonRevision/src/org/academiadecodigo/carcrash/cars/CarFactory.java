@@ -2,7 +2,13 @@ package org.academiadecodigo.carcrash.cars;
 
 public class CarFactory {
 
-    public static  Car getNewCar() {
+    private int car;
+
+
+
+    public static Car getNewCar() {
+
+
 
         return null;
 

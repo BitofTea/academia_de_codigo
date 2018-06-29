@@ -1,16 +1,18 @@
 package org.academiadecodigo.carcrash.field;
 
+//Describes where a car lives on the grid
+//Updating position results in moving the car
+
 public class Position {
 
+    private int col;
+    private int row;
 
-    //private int with = 5;
-    //private int height = 5;
-    private int col = 7;
-    private int row = 7;
 
-    public Position() {
-        this.col = (int) (Math.random() * Field.getWidth());
-        this.row = (int) (Math.random() * Field.getHeight());
+    public Position(int col, int row){
+       this.col = col;
+       this.row = row;
+        System.out.println("this position");
 
     }
 
@@ -21,6 +23,13 @@ public class Position {
     public int getRow() {
         return row;
     }
+
+    public void setRandom() {
+        this.col = (int) (Math.random() * Field.getWidth());
+        this.row = (int) (Math.random() * Field.getHeight());
+
+    }
+
 
     public void moveUp(int i) {
 
@@ -36,7 +45,7 @@ public class Position {
         if (row + i < Field.getHeight()) {
             row += i;
         } else {
-            row = Field.getHeight();
+            row = Field.getHeight() - 1;
         }
     }
 
@@ -52,13 +61,13 @@ public class Position {
     public void moveRight(int i) {
 
         if (col + i < Field.getWidth()) {
-            col -= i;
+            col += i;
         } else {
-            col = Field.getWidth();
+            col = Field.getWidth() - 1;
         }
     }
 
-    public void move(Direction direction, int i) {
+    public void moveInDirection(Direction direction, int i) {
 
 
         switch (direction) {

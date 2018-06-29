@@ -7,6 +7,10 @@ import com.googlecode.lanterna.screen.ScreenWriter;
 import com.googlecode.lanterna.terminal.Terminal;
 import org.academiadecodigo.carcrash.cars.Car;
 
+//Field for plcing cars
+//Knows how to draw a bunch of cars
+//Usage of the lanterna lib for writing to screen
+
 public final class Field {
 
     private static int width;
