@@ -95,6 +95,17 @@ public class Position {
         }
     }
 
+    public boolean isOnEdge(Direction direction){
+
+        return (direction == Direction.RIGHT && col = Field.getWidth() - 1 ||
+                direction == Direction.LEFT && col = 0 ||
+                direction == Direction.UP && row = row = 0 ||
+                direction == Direction.DOWN && row = Field.getHeight() - 1);
+
+
+
+    }
+
     @Override
     public String toString() {
         return "column=" + " " + col + "row=" + " " + row;

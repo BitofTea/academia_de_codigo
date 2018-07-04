@@ -7,7 +7,7 @@ import com.googlecode.lanterna.screen.ScreenWriter;
 import com.googlecode.lanterna.terminal.Terminal;
 import org.academiadecodigo.carcrash.cars.Car;
 
-//Field for plcing cars
+//Field for placing cars
 //Knows how to draw a bunch of cars
 //Usage of the lanterna lib for writing to screen
 
@@ -63,9 +63,9 @@ public final class Field {
         for (Car c : cars) {
 
             if (!c.isCrashed()) {
-                screenWriter.drawString(c.getPos().getCol(), c.getPos().getRow(), c.toString());
+                screenWriter.drawString(c.getPosition().getCol(), c.getPosition().getRow(), c.toString());
             } else {
-                screen.putString(c.getPos().getCol(), c.getPos().getRow(), c.toString(), Terminal.Color.WHITE, Terminal.Color.RED, ScreenCharacterStyle.Blinking);
+                screen.putString(c.getPosition().getCol(), c.getPosition().getRow(), c.toString(), Terminal.Color.WHITE, Terminal.Color.RED, ScreenCharacterStyle.Blinking);
             }
 
         }

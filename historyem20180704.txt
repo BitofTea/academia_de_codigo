@@ -1,0 +1,500 @@
+   29  ls
+   30  git status
+   31  git add .
+   32  git commit -m "new HttpServer"
+   33  git push origin master
+   34  git status
+   35  exit
+   36  cd Desktop/
+   37  ls
+   38  cd Gabriela/
+   39  ls
+   40  git status
+   41  git pull origin master
+   42  git status
+   43  exit
+   44  cd Desktop/
+   45  ls
+   46  cd popstars-skeletons/
+   47  ls
+   48  git pull origin master
+   49  git status
+   50  git add .
+   51  git status
+   52  cd ..
+   53  cd ..
+   54  cd Desktop/
+   55  ls
+   56  cd Gabriela/
+   57  ls
+   58  cd .
+   59  cd ..
+   60  cd popstars-skeletons/
+   61  ls
+   62  git pull origin master
+   63  git stash
+   64  git pull origin master
+   65  git status
+   66  ls
+   67  exit
+   68  cd Des
+   69  cd Desktop/
+   70  ls
+   71  cd Gabriela/
+   72  ls
+   73  git status
+   74  git add .
+   75  git commit -m "new consumer producer exercises"
+   76  git status
+   77  cd Desktop/
+   78  ls
+   79  cd Gabriela/
+   80  ls
+   81  git pull origin master
+   82  cd Desktop/
+   83  ls
+   84  cd Gabriela/
+   85  ls
+   86  cd ..
+   87  ls
+   88  cd popstars-skeletons/
+   89  ls
+   90  git status
+   91  git pull origin master
+   92  git status
+   93  exi
+   94  exit
+   95  cd Desktop/
+   96  ls
+   97  cd Ga
+   98  cd Gabriela/
+   99  ls
+  100  git status
+  101  git add .
+  102  git commit -m "piggybank and hotel revisions"
+  103  git push origin master
+  104  git status
+  105  exit
+  106  cd Desktop/
+  107  ls
+  108  cd Gabriela/
+  109  ls
+  110  git status
+  111  git pull origin master
+  112  cd Desktop/
+  113  ls
+  114  cd Gabriela/
+  115  ls
+  116  git status
+  117  git stash
+  118  git status
+  119  git add .
+  120  git commit -m
+  121  git push origin master
+  122  cd ..
+  123  ls
+  124  cd poppstars-skeleton
+  125  cd popstars-skel
+  126  cd popstars-skeletons
+  127  ls
+  128  git status
+  129  git push origin master
+  130  exit
+  131  ls
+  132  cd Desktop/
+  133  ls
+  134  cd Gabriela/
+  135  ls
+  136  mkdir revisions
+  137  cd revisions/
+  138  ls
+  139  git clone https://github.com/pantoninho/garagem-skeleton.git
+  140  cd garagem-skeleton/
+  141  ls
+  142  cd Desktop/
+  143  ls
+  144  cd Gab
+  145  cd Ga
+  146  cd Gabriela/
+  147  ls
+  148  cd revisions
+  149  ls
+  150  git status
+  151  cd .
+  152  cd .
+  153  cd ..
+  154  ls
+  155  cd revisions
+  156  ls
+  157  git status
+  158  git add .
+  159  clear 
+  160  git status
+  161  git add .
+  162  git status
+  163  git commit -m "revisions garage "
+  164  gti commit -m "revisions garage"
+  165  git commit -m "revisions garage"
+  166  git remote -v
+  167  git push origin master
+  168  cd ..
+  169  cd ..
+  170  ls
+  171  cd popstars-skeletons/
+  172  ls
+  173  git status
+  174  git push origin master
+  175  exit
+  176  cd Desktop/
+  177  ls
+  178  cd Gabriela/
+  179  ls
+  180  cd prompt-view-master
+  181  ant
+  182  cd Desktop/
+  183  ls
+  184  cd Ga
+  185  cd Gabriela/
+  186  ls
+  187  git status
+  188  git add .
+  189  git commit -m"Garagem continuação-b e Prompt-View exercises"
+  190  git push origin master
+  191  git status
+  192  exit
+  193  cd Desktop/
+  194  ls
+  195  cd G
+  196  cd Gab
+  197  cd Gab
+  198  ls
+  199  ls
+  200  git status
+  201  git add :
+  202  git add .
+  203  git commit -m "changes Garagem-c"
+  204  git push origin master
+  205  git status
+  206  xit
+  207  cd Desktop/
+  208  ls
+  209  cd Ga
+  210  ls
+  211  cd Gabriela/
+  212  ls
+  213  git satus
+  214  git status
+  215  git add .
+  216  git commit -m "Garagem-d, garagemDosRicos"
+  217  git push origin master
+  218  git status
+  219  exit
+  220  ls
+  221  cd Desktop/
+  222  ls
+  223  cd por
+  224  cd popstars
+  225  ls
+  226  cd popstars/
+  227  cd sker
+  228  cd skeletons/
+  229  ls
+  230  exit
+  231  cd Desktop/
+  232  ls
+  233  cd Ga
+  234  cd Gab
+  235  cd Gabriela/
+  236  ls
+  237  git status
+  238  git add .
+  239  git commit -m "new Genies exercise"
+  240  git push origin master
+  241  git status
+  242  exit
+  243  git status
+  244  vd dev
+  245  cd dev
+  246  ls
+  247  cd Desktop/popstars
+  248  ls
+  249  cd popstars/
+  250  cd skeletons/
+  251  ls
+  252  cd ../../..
+  253  mkdir CarCrashRev
+  254  cd CarCrashRev/
+  255  cp ../popstars/popstars/skeletons/car-crash-skeleton/. .
+  256  cp ../popstars/popstars/skeletons/car-crash-skeleton/ .
+  257  cp ../popstars/popstars/skeletons/car-crash-skeleton .
+  258  cp ../popstars/popstars/skeletons/car-crash-skeleton /.
+  259  clear 
+  260  cd ../..
+  261  cd Desktop/
+  262  cd popstars/popstars/
+  263  cd skeletons/
+  264  cd car-crash-skeleton/
+  265  ls
+  266  cp . ../../../../CarCrashRev/
+  267  cp . ../../../../CarCrashRev
+  268  cp /. ../../../../CarCrashRev
+  269  cl3
+  270  clear 
+  271  cd ../../..
+  272  cd ..
+  273  cd CarCrashRev/
+  274  git remote -v
+  275  cd ..
+  276  cd ..
+  277  cd Gabriela/
+  278  ls
+  279  cd C
+  280  cd CarCrashRev/
+  281  ls
+  282  git remote -v
+  283  vim
+  284  ls
+  285  cd Desktop/
+  286  cp car-crash-skeletonRevision Gabriela/
+  287  cp car-crash-skeletonRevision Gabriela
+  288  cp car-crash-skeletonRevision Gabriela/.
+  289  mv car-crash-skeletonRevision/ Gabriela/
+  290  cd Gabriela/
+  291  git status
+  292  git add .
+  293  git commit -m "car-crash-Revision"
+  294  git push origin master
+  295  git pull origin master
+  296  git branch 
+  297  git status
+  298  git stash .
+  299  git stash save -al
+  300  git stash save -al--all
+  301  git push origin master
+  302  exit
+  303  cd Desktop/
+  304  ls
+  305  cd Gabriela/
+  306  ls
+  307  git status
+  308  git add .
+  309  git commit -m "car-crash-skeletonRevision chnaged"
+  310  git push origin master
+  311  git status
+  312  exit
+  313  cd D
+  314  cd Desktop/
+  315  ls
+  316  cd Gabriela/
+  317  ls
+  318  exit
+  319  cd Desktop/
+  320  ls
+  321  cd Gabriela/
+  322  ls
+  323  cd .
+  324  cd .
+  325  cd ..
+  326  cd Gabriela/
+  327  cd ..
+  328  cd ..
+  329  git gabrielateles@bootcamp.academiadecodigo.org:myrepos/exercises
+  330  gabrielateles@bootcamp.academiadecodigo.org:myrepos/exercises
+  331  gabrielateles@bootcamp.academiadecodigo.org:repos/exercise
+  332  cd D
+  333  cd Desktop/
+  334  ls
+  335  cd Gabriela/
+  336  ls
+  337  remote -v
+  338  exit
+  339  ssh gabrielateles@bootcamp.academiadecodigo.org:
+  340  ssh gabrielateles@bootcamp.academiadecodigo.org:
+  341  ssh gabrielateles@bootcamp.academiadecodigo.org:myrepos
+  342  ssh gabrielateles@bootcamp.academiadecodigo.org:git remote -v
+  343  ssh gabrielateles@bootcamp.academiadecodigo.org:repos/exercises
+  344  cd Desktop/
+  345  ls
+  346  cd Gabriela/
+  347  ls
+  348  clear 
+  349  git remote -v
+  350  exit
+  351  mvn -version
+  352  cd Desktop/
+  353  mvn -version
+  354  su academiadecodigo
+  355  clear 
+  356  su academiadecodigo
+  357  exit
+  358  cd Desktop/
+  359  ls
+  360  cd popstars-skeletons/
+  361  ls
+  362  git status
+  363  git commit -a
+  364  git git checkout -- <skeletons/car-crash-skeleton/src/org/academiadecodigo/carcrash/field/Direction.java>
+  365  git git checkout <skeletons/car-crash-skeleton/src/org/academiadecodigo/carcrash/field/Direction.java>
+  366  git stash
+  367  git push origin master
+  368  git pull origin master
+  369  git status
+  370  git stash
+  371  git pull origin master
+  372  cd ..
+  373  ls
+  374  cd Gab
+  375  cd Gabriela/
+  376  ls
+  377  git status
+  378  git add .
+  379  git commit -m "changes on car-crash-skeletonRevision, carFactory initialization"
+  380  git push origin master
+  381  git status
+  382  git stash
+  383  git status
+  384  ls
+  385  cd revisions
+  386  ls
+  387  ls -l
+  388  cd ..
+  389  ls
+  390  rm -r revisions
+  391  rm -rf revisions
+  392  ls
+  393  git status
+  394  git add .
+  395  git commit -m "deleted revisions"
+  396  git status
+  397  git push origin
+  398  git push origin master
+  399  git status
+  400  exit
+  401  cd -
+  402  mysql -u root
+  403  brew services start mysql
+  404   mysql -u root
+  405  brew services start mysql
+  406  su academiadecodigo
+  407  su academiadecodigo
+  408  brew services start mysql
+  409  exit
+  410  mysql -u root
+  411  mysql -u root
+  412  vim seeds.sql
+  413  mysql -u root boat_booking < seeds.sql
+  414  vim 
+  415  vim seeds.sql
+  416  mysql -u root boat_booking < seeds.sql
+  417  mysql -u root
+  418  vim 
+  419  vim seeds.sql 
+  420  mysql -u root
+  421  vim seeds.sql
+  422  mysql -u root
+  423  DDROP IF EXISTS resevations;
+  424  mysql -u root boat_bookinkg > schema.sql;
+  425  mysql -u root boat_booking > schema.sql;
+  426  show databases;
+  427  show databases
+  428  mysql
+  429  mysql -u root
+  430  vim
+  431  vim schema.sql
+  432  mysql -u root 
+  433  mysql -u root library < schema.sql
+  434  vim schema.sql
+  435  mysql -u root libray < schema.sql
+  436  mysql -u root library < schema.sql
+  437  vim schema.sql
+  438  mysql -u root library < schema.sql
+  439  mysql -u root library < schema.sql
+  440  mysql -u root library < schema.sql
+  441  mysql -u root library < schema.sql
+  442  mysql -u root library < schema.sql
+  443  mysql -u root library < schema.sql
+  444  mysql -u root library < schema.sql
+  445  mysql -u root library < schema.sql
+  446  mysql -u root
+  447  show tables;
+  448  mysql -u root library < schema.sql
+  449  show tables;
+  450  mysql -u root
+  451  ls
+  452  vim schema.sql 
+  453  vim schema.sql 
+  454  vim schema.sql 
+  455  vim schema.sql 
+  456  vim schema.sql 
+  457  vim schema.sql 
+  458  vim schema.sql 
+  459  vim schema.sql 
+  460  vim schema.sql 
+  461  vim schema.sql 
+  462  mysql -u root library < schema.sql
+  463  atom schema.sql 
+  464  mysql -u root library < schema.sql
+  465  mysql -u root library < schema.sql
+  466  mysql -u root library < schema.sql
+  467  mysql -u root library < schema.sql
+  468  mysql -u root library < schema.sql
+  469  mysql -u root library < schema.sql
+  470  mysql -u root library < schema.sql
+  471  mysql -u root library < schema.sql
+  472  mysql -u root library < schema.sql
+  473  mysql -u root library < schema.sql
+  474  mysql -u root library < schema.sql
+  475  mysql -u root library < schema.sql
+  476  ls
+  477  mv *.sql Desktop/
+  478  mv *.sql Desktop/
+  479  cd Desktop/
+  480  ls
+  481  cd Gab
+  482  cd Gabriela/
+  483  ls
+  484  git status
+  485  git add .
+  486  git commit -m "mysql exercises-library"
+  487  git push origin master
+  488  git status
+  489  cd Des
+  490  cd ..
+  491  cd popstars
+  492  cd ..
+  493  cd popstars-skeketons
+  494  ls
+  495  cd popstars-skeletons/
+  496  ls
+  497  git status
+  498  exit
+  499  mysql -u root
+  500  cd Desktop/
+  501  cd Gabriela/
+  502  ls *.sql
+  503  git status
+  504  git add seedslib.sql 
+  505  git commit -m "Added seedslib"
+  506  git remote -v
+  507  ls seedslib.sql 
+  508  mysql -u root library < seedslib.sql 
+  509  git status
+  510  mysql -u root library < seedslib.sql 
+  511  mysql -u root library < seedslib.sql 
+  512  mysql -u root < schema.sql 
+  513  mysql -u root library < seedslib.sql 
+  514  mysql -u root < schema.sql 
+  515  mysql -u root library < seedslib.sql 
+  516  mysql -u root < schema.sql 
+  517  mysql -u root library < seedslib.sql 
+  518  mysql -u root < schema.sql 
+  519  mysql -u root library < seedslib.sql 
+  520  mysql -u root < schema.sql 
+  521  mysql -u root library < seedslib.sql 
+  522  history
+  523  history | grep commit
+  524  history | grep git
+  525  history | grep abriel
+  526  history -d 199
+  527  history | grep abriel
+  528  history > historyem20180704.txt
