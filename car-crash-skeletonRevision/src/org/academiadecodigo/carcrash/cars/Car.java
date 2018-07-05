@@ -1,9 +1,8 @@
 package org.academiadecodigo.carcrash.cars;
-
 import org.academiadecodigo.carcrash.field.Direction;
 import org.academiadecodigo.carcrash.field.Position;
 
-//Diferent types of cars exist
+//Different types of cars exist
 //Cars move at different speeds and in different ways
 //A car crash at any time
 
@@ -61,6 +60,7 @@ abstract public class Car {
         }
 
         this.currentDirection = newDirection;
+
         //newDirection ou newPosition como argumento?
         getPosition().moveInDirection(newDirection, speed);
 

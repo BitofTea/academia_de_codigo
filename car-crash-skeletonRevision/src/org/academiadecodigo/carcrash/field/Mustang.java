@@ -12,9 +12,4 @@ public class Mustang extends Car {
 
     }
 
-    @Override
-    public void move() {
-        ++;
-
-    }
 }

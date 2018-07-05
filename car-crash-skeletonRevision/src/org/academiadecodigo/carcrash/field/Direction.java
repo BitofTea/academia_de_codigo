@@ -5,7 +5,7 @@ public enum Direction {
     UP,
     DOWN,
     LEFT,
-    RIGHT
+    RIGHT;
 
     public Direction oppositeDirection(){
         Direction opposite = Direction.UP; //Porquê esta equivalência da direcção oposta a Direction.UP?

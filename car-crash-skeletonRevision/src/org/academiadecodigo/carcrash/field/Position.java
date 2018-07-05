@@ -97,9 +97,10 @@ public class Position {
 
     public boolean isOnEdge(Direction direction){
 
+        //No caso dos carros chegarem à berma do Field, instruções para andarem noutra direcção
         return (direction == Direction.RIGHT && col = Field.getWidth() - 1 ||
                 direction == Direction.LEFT && col = 0 ||
-                direction == Direction.UP && row = row = 0 ||
+                direction == Direction.UP && row = 0 ||
                 direction == Direction.DOWN && row = Field.getHeight() - 1);
 
 

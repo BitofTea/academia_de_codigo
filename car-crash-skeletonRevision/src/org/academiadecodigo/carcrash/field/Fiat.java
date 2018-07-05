@@ -15,11 +15,8 @@ public class Fiat extends Car {
     @Override
     public void move() {
 
-        if (MOVES >  ) {
 
-            ++;
 
-        }
     }
 }
 
