@@ -5,7 +5,7 @@ public class PositionTester {
     public static void main(String[] args) {
 
         Field.init(10, 10);
-        Position position = new Position(0,0);
+        Position position = new Position();
 
         System.out.println(position);
         System.out.println("########");

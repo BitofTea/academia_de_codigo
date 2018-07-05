@@ -13,10 +13,14 @@ public class Game {
 
     public static final int MANUFACTURED_CARS = 20;
 
-    /** Container of Cars */
+    /**
+     * Container of Cars
+     */
     private Car[] cars;
 
-    /** Animation delay */
+    /**
+     * Animation delay
+     */
     private int delay;
 
     public Game(int cols, int rows, int delay) {
@@ -59,11 +63,33 @@ public class Game {
             Field.draw(cars);
 
         }
-
     }
 
-    private void moveAllCars() {
+    public void checkCollision(Car car) {
 
+        for (Car otherCar : cars) {
+
+            if (otherCar == car) {
+                continue;
+
+            }
+
+            if (car.getPosition().compare(otherCar.getPosition())) {
+                car.crash();
+                otherCar.crash();
+
+            }
+        }
     }
 
+    public void moveAllCars() {
+
+        for (Car car : cars) {
+            car.move();
+
+            checkCollision(car);
+
+
+        }
+    }
 }

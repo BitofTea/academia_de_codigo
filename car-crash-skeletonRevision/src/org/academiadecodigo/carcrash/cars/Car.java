@@ -9,15 +9,15 @@ import org.academiadecodigo.carcrash.field.Position;
 
 abstract public class Car {
 
-    Position position;
-    CarType carType;
-    Direction currentDirection;
-    Boolean crashed;
+    private Position position;
+    private CarType carType;
+    private Direction currentDirection;
+    private boolean crashed;
 
     public Car(CarType carType, Position position) {
         this.position = position;
         this.carType = carType;
-        currentDirection = Direction.values()[(int) Math.random() * Direction.values().length];
+        currentDirection = Direction.values()[(int) (Math.random() * Direction.values().length)];
 
     }
 
@@ -27,6 +27,7 @@ abstract public class Car {
     }
 
     public boolean isCrashed() {
+        System.out.println(crashed);
         return crashed;
 
     }
@@ -39,10 +40,13 @@ abstract public class Car {
     }
 
     public Direction chooseDirection() {
-        currentDirection = Direction.values()[(int) Math.random() * Direction.values().length];
+        currentDirection = Direction.values()[(int) (Math.random() * Direction.values().length)];
         return currentDirection;
 
     }
+
+    abstract public void move();
+
 
     //Todo este método é um pouco confuso... para mim, claro!
 
@@ -67,6 +71,11 @@ abstract public class Car {
 
     }
 
-    abstract public void move();
+    @Override
+    public String toString() {
+        return isCrashed() ? "C" : Character.toString(carType.getSymbol());
 
+    }
 }
+
+

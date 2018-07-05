@@ -9,10 +9,8 @@ public class Position {
     private int row;
 
 
-    public Position(int col, int row){
-       this.col = col;
-       this.row = row;
-        System.out.println("this position");
+    public Position(){
+      setRandom();
 
     }
 
@@ -103,8 +101,11 @@ public class Position {
                 direction == Direction.UP && row == 0 ||
                 direction == Direction.DOWN && row == Field.getHeight() - 1);
 
+    }
 
-
+    public boolean compare(Position position) {
+        return (col == position.getCol() &&
+                row == position.getRow());
     }
 
     @Override

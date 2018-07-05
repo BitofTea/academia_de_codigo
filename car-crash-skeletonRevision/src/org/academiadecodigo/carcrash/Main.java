@@ -1,5 +1,7 @@
 package org.academiadecodigo.carcrash;
 
+import org.academiadecodigo.carcrash.cars.Car;
+
 public class Main {
 
     public static void main(String[] args) throws InterruptedException {

@@ -6,11 +6,11 @@ import org.academiadecodigo.carcrash.cars.CarType;
 public class Mustang extends Car {
 
     private int moves = 0;
-    private final static int MOVES = 2;
+    private final static int MOVES = 6;
 
 
     public Mustang() {
-        super(CarType.MUSTANG,new Position(0,0));
+        super(CarType.MUSTANG,new Position());
 
     }
 
@@ -20,8 +20,10 @@ public class Mustang extends Car {
 
 
         if(moves < MOVES){
-            accelerate(chooseDirection(), 1);
+            accelerate(chooseDirection(), 6);
 
         }
+
+        accelerate(chooseDirection(), 2);
     }
 }
