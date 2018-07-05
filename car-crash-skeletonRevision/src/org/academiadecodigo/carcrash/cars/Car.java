@@ -1,4 +1,5 @@
 package org.academiadecodigo.carcrash.cars;
+
 import org.academiadecodigo.carcrash.field.Direction;
 import org.academiadecodigo.carcrash.field.Position;
 
@@ -13,7 +14,7 @@ abstract public class Car {
     Direction currentDirection;
     Boolean crashed;
 
-    public void car(CarType carType, Position position) {
+    public Car(CarType carType, Position position) {
         this.position = position;
         this.carType = carType;
         currentDirection = Direction.values()[(int) Math.random() * Direction.values().length];
@@ -51,10 +52,10 @@ abstract public class Car {
         if (isCrashed()) {
             return;
         }
-        
+
         Direction newDirection = direction;
 
-        if(position.isOnEdge(direction)&& newDirection.equals(currentDirection)){
+        if (position.isOnEdge(direction) && newDirection.equals(currentDirection)) {
 
             newDirection = currentDirection.oppositeDirection();
         }
@@ -65,5 +66,7 @@ abstract public class Car {
         getPosition().moveInDirection(newDirection, speed);
 
     }
+
+    abstract public void move();
 
 }

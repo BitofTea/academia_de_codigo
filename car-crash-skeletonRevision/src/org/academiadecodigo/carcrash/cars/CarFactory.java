@@ -1,5 +1,9 @@
 package org.academiadecodigo.carcrash.cars;
 
+import org.academiadecodigo.carcrash.field.Fiat;
+import org.academiadecodigo.carcrash.field.Field;
+import org.academiadecodigo.carcrash.field.Mustang;
+
 public class CarFactory {
 
     public static Car getNewCar() {
