@@ -7,28 +7,26 @@ import java.util.List;
 public class ViewUserInteraction {
 
     private List<Book> books;
-    private String[] options = { ,}
+    private String[] options = {"title", "author", "year"};
 
     Prompt prompt = new Prompt(System.in, System.out);
 
 
     public void showMenu() {
 
-        MenuInputScanner scanner = new MenuInputScanner(List<>);
-        scanner.setMessage("");
+        MenuInputScanner scanner = new MenuInputScanner(options);
+        scanner.setMessage("Choose your search option's number.");
+
+        int answerIndex = prompt.getUserInput(scanner);
+        System.out.println("User choosed" + options[answerIndex]);
+    }
 
 
-
-        }
-
+    public void listBook() {
 
     }
 
-    public Book listBook() {
-
-    }
-
-    public void add(books) {
+    public void add() {
 
 
     }
