@@ -1,4 +1,7 @@
-public class BookModel { //Classe anémica: só getters e setters
+public class BookModel {
+
+    //Esta é uma Classe anémica: só getters e setters
+    //A lógica do negócio = model.
 
     private String title;
     private String author;

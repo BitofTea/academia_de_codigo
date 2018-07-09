@@ -1,34 +1,25 @@
-import org.academiadecodigo.bootcamp.Prompt;
-import org.academiadecodigo.bootcamp.scanners.menu.MenuInputScanner;
-
 import java.awt.print.Book;
 import java.util.List;
+
+//A apresentação, visualização = view.
+//Nota: incorporar no view alguns testes sanitários (sanity checks)?
+
 
 public class ViewUserInteraction {
 
     private List<Book> books;
-    private String[] options = { ,}
-
-    Prompt prompt = new Prompt(System.in, System.out);
+    private String[] options = {"title", "author", "year"};
 
 
     public void showMenu() {
 
-        MenuInputScanner scanner = new MenuInputScanner(List<>);
-        scanner.setMessage("");
+    }
 
-
-
-        }
-
+    public void listBook() {
 
     }
 
-    public Book listBook() {
-
-    }
-
-    public void add(books) {
+    public void add() {
 
 
     }
