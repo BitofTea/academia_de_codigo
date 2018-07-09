@@ -1,4 +1,7 @@
-import org.academiadecodigo.bootcamp.scanners.menu.MenuInputScanner;
+package org.academiadecodigo.bootcamp.controller;
+
+import org.academiadecodigo.bootcamp.model.BookModel;
+import org.academiadecodigo.bootcamp.view.LibraryView;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -6,11 +9,11 @@ import java.util.List;
 public class LibraryController {
 
 
-    private ViewUserInteraction view;
+    private LibraryView view;
     private List<BookModel> books;
 
     public LibraryController() {
-        view = new ViewUserInteraction();
+        view = new LibraryView();
         books = new LinkedList<>();
     }
 

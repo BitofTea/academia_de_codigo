@@ -1,3 +1,5 @@
+package org.academiadecodigo.bootcamp.model;
+
 public class BookModel {
 
     //Esta é uma Classe anémica: só getters e setters
@@ -31,5 +33,5 @@ public class BookModel {
     public int getYear() {
         return year;
     }
-}
 
+}

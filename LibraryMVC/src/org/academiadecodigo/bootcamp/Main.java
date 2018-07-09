@@ -1,9 +1,6 @@
+package org.academiadecodigo.bootcamp;
 
-import org.academiadecodigo.bootcamp.Prompt;
-import org.academiadecodigo.bootcamp.scanners.menu.MenuInputScanner;
-
-import java.awt.print.Book;
-
+import org.academiadecodigo.bootcamp.controller.LibraryController;
 
 public class Main {
 
@@ -13,4 +10,5 @@ public class Main {
         library.init();
 
     }
+
 }
