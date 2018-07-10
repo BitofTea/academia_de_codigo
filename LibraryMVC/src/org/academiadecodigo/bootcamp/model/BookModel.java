@@ -4,10 +4,12 @@ public class BookModel {
 
     //Esta é uma Classe anémica: só getters e setters
     //A lógica do negócio = model.
+    //Representa a área dos dados.
 
     private String title;
     private String author;
     private int year;
+
 
     public void setTitle(String title) {
         this.title = title;
@@ -17,7 +19,7 @@ public class BookModel {
         return title;
     }
 
-    public void setAuthor(String author){
+    public void setAuthor(String author) {
         this.author = author;
 
     }
