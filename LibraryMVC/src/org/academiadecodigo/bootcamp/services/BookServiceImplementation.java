@@ -1,6 +1,7 @@
 package org.academiadecodigo.bootcamp.services;
 
 import org.academiadecodigo.bootcamp.model.BookModel;
+import org.academiadecodigo.bootcamp.view.LibraryView;
 
 import java.util.LinkedList;
 import java.util.List;

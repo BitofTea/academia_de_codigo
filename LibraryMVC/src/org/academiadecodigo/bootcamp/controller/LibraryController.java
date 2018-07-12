@@ -1,11 +1,9 @@
 package org.academiadecodigo.bootcamp.controller;
-import org.academiadecodigo.bootcamp.model.BookModel;
+
 import org.academiadecodigo.bootcamp.services.BookService;
 import org.academiadecodigo.bootcamp.services.BookServiceImplementation;
 import org.academiadecodigo.bootcamp.view.LibraryView;
 
-import java.awt.print.Book;
-import java.util.List;
 
 
 //Lida com as acções do user na interface, acesso a dados e a business logic, tudo no mesmo lugar.
@@ -20,6 +18,7 @@ public class LibraryController {
     public LibraryController() {
         view = new LibraryView();
         bookService = new BookServiceImplementation();
+
 
     }
 
@@ -42,14 +41,19 @@ public class LibraryController {
                     break;
 
                 case 3:
-                    bookService.remove();
+                    bookService.remove(view.removeBook());
                     break;
 
+                case 4:
+                    view.getBook(bookService.get(bookService.get(String title));
+                    break;
 
                 default:
                     exit = true;
                     break;
             }
+
         }
     }
+
 }

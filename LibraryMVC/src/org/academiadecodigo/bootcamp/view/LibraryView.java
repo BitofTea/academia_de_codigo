@@ -11,9 +11,12 @@ import java.util.List;
 //A apresentação, visualização = view.
 //O trabalho na Views(designers) separado de outras layers(developers)
 
+
 public class LibraryView {
 
     private Prompt prompt = new Prompt(System.in, System.out);
+    //private LibraryController libraryController = new LibraryController();
+
 
     public int showMenu() {
 
@@ -21,20 +24,17 @@ public class LibraryView {
         MenuInputScanner scanner = new MenuInputScanner(options);
         scanner.setMessage("Choose your search option's number.");
 
+
         int answerIndex = prompt.getUserInput(scanner);
 
         System.out.println("User chose " + options[answerIndex - 1]);
+
 
         return answerIndex;
     }
 
 
     public void listBook(List<BookModel> books) {
-
-        //if(books.size() == 0){ //--- existe método 'isEmpty()' na docs. do java - interface List<E>
-        //System.out.println("No books");
-        //return;
-        //}
 
         if (books.isEmpty()) {
             System.out.println("No books");
@@ -73,9 +73,28 @@ public class LibraryView {
 
     }
 
-    public BookModel removeBook(){
+    public BookModel removeBook() {
+
+        StringInputScanner question = new StringInputScanner();
+        question.setMessage("Do you want to remove a book?");
+
+        String answer = prompt.getUserInput(question);
+
+        return null;
+    }
+
+    public void getBook(List<BookModel> books) {
+
+        StringInputScanner question = new StringInputScanner();
+        question.setMessage("What book do you want?");
+
+        String title = prompt.getUserInput(question);
 
 
+        for (BookModel i : books) {
+            System.out.print(i.getTitle() + " | " + i.getAuthor());
+
+        }
     }
 }
 
