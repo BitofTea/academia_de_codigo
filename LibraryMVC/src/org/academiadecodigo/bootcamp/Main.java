@@ -7,8 +7,6 @@ public class Main {
 
     public static void main(String[] args) {
 
-        LibraryView view1 = null;
-
         LibraryController library = new LibraryController();
         library.init();
 

@@ -1,20 +1,19 @@
 package org.academiadecodigo.bootcamp.services;
 
 import org.academiadecodigo.bootcamp.model.BookModel;
-import org.academiadecodigo.bootcamp.view.LibraryView;
 
 import java.util.LinkedList;
 import java.util.List;
 
 public class BookServiceImplementation implements BookService {
 
-    private List<BookModel> books  = new LinkedList<>();
+    private List<BookModel> books = new LinkedList<>();
 
     @Override
-    public BookModel get(String title) {
+    public BookModel get (String bookTitle) {
 
         for (BookModel book : books) {
-            if (book.getTitle().equals(title)) {
+            if (bookTitle.equals(book.getTitle())) {
                 return book;
             }
         }
@@ -35,9 +34,14 @@ public class BookServiceImplementation implements BookService {
     }
 
     @Override
-    public void remove(BookModel bookModel) {
+    public void remove(String bookTitle) {
 
-        books.remove(bookModel);
+        for (BookModel book : books) {
+            if (bookTitle.equals(book.getTitle())) {
+                books.remove(book);
 
+            }
+        }
     }
 }
+
