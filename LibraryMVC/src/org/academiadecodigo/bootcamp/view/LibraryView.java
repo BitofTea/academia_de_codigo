@@ -30,7 +30,7 @@ public class LibraryView {
 
         int answerIndex = prompt.getUserInput(scanner);
 
-        System.out.println("User chose " + options[answerIndex - 1]);
+        System.out.println("User choose " + options[answerIndex - 1]);
 
         return answerIndex;
     }
