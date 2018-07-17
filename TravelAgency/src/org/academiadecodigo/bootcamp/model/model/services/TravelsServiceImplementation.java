@@ -16,7 +16,7 @@ public class TravelsServiceImplementation implements TravelsService {
     }
 
     @Override
-    public TravelsModel get(String destination) {
+    public TravelsModel get(TravelsModel destination) {
 
         for (TravelsModel travel : travels) {
             if (destination.equals(travel.getDestination())) {
@@ -25,8 +25,8 @@ public class TravelsServiceImplementation implements TravelsService {
             }
         }
         return null;
-    }
 
+    }
 
     @Override
     public void remove(String destination) {

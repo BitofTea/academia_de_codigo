@@ -85,16 +85,22 @@ public class TravelsView {
 
     }
 
-    public void getTravel() {
+    public TravelsModel getTravel() {
 
+        StringInputScanner travDestination = new StringInputScanner();
+        travDestination.setMessage("What is your travel destination");
 
-        StringInputScanner travel = new StringInputScanner();
-        travel.setMessage("What is the travel?");
+        StringInputScanner tourismOperator = new StringInputScanner();
+        tourismOperator.setMessage("What is your tourism operator ");
 
-        String travelDestination = prompt.getUserInput(travel);
+        StringInputScanner travelPack = new StringInputScanner();
+        travelPack.setMessage("Get your travel.");
 
-        System.out.println("This travel " +  travelDestination + " have been added to your list.");
+        String destination = prompt.getUserInput(travDestination);
+        String operator = prompt.getUserInput(tourismOperator);
+        String pack = prompt.getUserInput(travelPack);
 
+        return null;
     }
 
 }

@@ -6,7 +6,7 @@ import java.util.List;
 public interface TravelsService {
 
 
-    TravelsModel get(String destination);
+    TravelsModel get(TravelsModel travelsModel);
 
     void remove (String destination);
 
