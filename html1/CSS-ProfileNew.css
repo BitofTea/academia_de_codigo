@@ -1,0 +1,68 @@
+
+body, html{
+    height: 100%;
+    font-family: 'Fredericka+the+Great', cursive;
+}
+
+.bg { 
+    /* The image used */
+    background-image: url("https://cdn.pixabay.com/photo/2018/04/08/15/13/background-3301487_960_720.jpg");
+   
+    /* Full height */
+    height: 100%;
+
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.centered{
+    text-align: center;
+
+}
+
+#Gabi_title{
+    margin-top: 0px;
+
+}
+
+.title-header{
+    font-size: 3.5em;
+    height: 80 px;  
+    align-content: center;
+    position: relative;
+    color: rgb(148, 114, 216);
+
+}
+
+.profile-txt{
+    padding-left: 0px;
+    text-align: center;
+    font-family: 'Space+Mono', monospace;
+    position: relative;
+    color: green;
+
+}
+
+li{
+    padding: 5px 0;
+}
+
+ul {
+    padding-left: 10px;
+    margin: auto;
+
+}
+
+.summary-txt{
+    position: relative;
+    color: forestgreen;
+
+}
