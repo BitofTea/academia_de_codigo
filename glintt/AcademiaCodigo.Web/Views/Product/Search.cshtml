@@ -1,0 +1,81 @@
+@using AcademiaCodigo.Web.Models;
+
+@model ProductViewModel;
+
+
+@{
+     ViewBag.Title = "Pesquisa"; 
+     ViewBag.Header = "Pesquisa de Produtos"; 
+}
+
+<div>
+
+    @using (Html.BeginForm("Search","Product")) 
+    {
+
+    <label for="i_code">Código</label>
+    <input type="text" id="i_code" name="i_code" value="" />
+
+    <label for="i_name">Nome</label>
+    <input type="text" id="i_name" name="i_name" value="" />
+
+    <input type="submit" name="bt_search" value="Pesquisar" /> 
+    }
+
+
+
+
+    <table class="table table-hover table-striped table-outliner">
+           <thead>
+              <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Stock</th>
+                <th>Actualizado em</th>
+                <th>Actualizado Por</th>
+            </tr>
+           </thead>    
+        <tbody>
+          @foreach(var item in Model.Products) 
+    {
+        <tr>
+           <td>@item.Code</td>
+           <td>@item.Name</td>
+           <td>@item.Price</td>
+           <td>@item.CurrentStock</td>
+           <td>@item.UpdatedOn</td>
+           <td>@item.UpdatedBy</td>
+           <td>@Html.ActionLink("+ info", "Detail", "Product", 
+              new{
+              code = @item.Code
+          },
+           new {@class="btn btn-primary"})
+          </td>
+        </tr>
+    }
+        </tbody>
+    </table>
+
+    @Html.ActionLink("Anterior", "Navigate", "Product", 
+    new {
+        Next=false,
+    page = Model.Filter.Page,
+    code = Model.Filter.Code,
+    name= Model.Filter.Name
+    }, new {@class = "btn btn-success"})
+
+    @Html.ActionLink("Seguinte", "Navigate", "Product", 
+    new {
+        Next=true,
+    page = Model.Filter.Page,
+    code = Model.Filter.Code,
+    name = Model.Filter.Name
+    }, new {@class = "btn btn-primary"})
+
+    @Html.ActionLink("Criar producto", "Create","Product",
+    new {
+        Next=true
+    },
+     new {@class = "btn btn-warning"})
+</div>

@@ -1,0 +1,97 @@
+@using AcademiaCodigo.Web.Models;
+
+@model ProductModel;
+
+@{
+      ViewBag.Title = "Detalhe"; 
+      ViewBag.Header = "Detalhe - " + @Model.Name;
+}
+
+@using (Html.BeginForm("Edit","Product")) 
+    {
+
+    <label for="i_code">Código</label>
+    <input type="text" id="i_code" name="i_code" value="@Model.Code" />
+
+    <label for="i_name">Nome</label>
+    <input type="text" id="i_name" name="i_name" value="@Model.Name" />
+
+    <label for="i_price">Preço</label>
+    <input type="text" id="i_price" name="i_price" value="@Model.Price" />
+
+    <label for="i_description">Descrição</label>
+    <input type="text" id="i_description" name="i_description" value="@Model.Description" />
+
+    <input Type="hidden" value="@Model.Id" id="i_id" name="i_id">
+    <input Type="hidden" value="@Model.Version" id="i_version" name="i_version">
+
+    <input type="submit" name="bt_search" value="Edit" /> 
+    }
+
+
+<div class= "container">
+
+<div class="row">
+        <div class="col-sm">
+            <label for="">Código</label>
+        </div>
+        <div class="col-sm">
+            @Model.Code
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm">
+            <label for="">Nome</label>
+        </div>
+        <div class="col-sm">
+            @Model.Name
+        </div>
+    </div>
+
+<div class="row">
+        <div class="col-sm">
+            <label for="">Preço</label>
+        </div>
+        <div class="col-sm">
+            @Model.Price
+        </div>
+    </div>
+
+<div class="row">
+        <div class="col-sm">
+            <label for="">Stock</label>
+        </div>
+        <div class="col-sm">
+            @Model.CurrentStock
+        </div>
+    </div>
+
+<div class="row">
+        <div class="col-sm">
+            <label for="">Criado Por</label>
+        </div>
+        <div class="col-sm">
+            @Model.CreatedBy - @Model.CreatedOn
+        </div>
+    </div>
+
+<div class="row">
+        <div class="col-sm">
+            <label for="">Actualizado em</label>
+        </div>
+        <div class="col-sm">
+            @Model.UpdatedBy - @Model.UpdatedOn
+        </div>
+    </div>
+
+<div class="row">
+        <div class="col-sm">
+            <label for="">Apagado Por</label>
+        </div>
+        <div class="col-sm">
+            @Model.DeletedBy - @Model.DeletedOn
+        </div>
+    </div>
+</div>
+

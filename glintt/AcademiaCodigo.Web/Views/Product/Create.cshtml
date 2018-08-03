@@ -1,0 +1,29 @@
+@using AcademiaCodigo.Web.Models;
+
+@model ProductModel;
+
+@{
+     ViewBag.Title = "Criar"; 
+     ViewBag.Header = "Criar Produtos"; 
+}
+
+<div>
+        @using (Html.BeginForm("Create","Product")) 
+        {
+
+        <label for="i_code">Código</label>
+        <input type="text" id="i_code" name="i_code" placeholder="colocar código"/>
+
+        <label for="i_name">Nome</label>
+        <input type="text" id="i_name" name="i_name" placeholder="colocar nome"/>
+
+        <label for="i_name">preço</label>
+        <input type="text" id="i_price" name="i_price" placeholder="colocar preço"/>
+
+        <label for="i_name">descrição</label>
+        <input type="text" id="i_description" name="i_description" placeholder="colocar descrição"/>
+
+        <input type="submit" name="bt_create" value="criar producto" /> 
+        }
+     
+</div>
